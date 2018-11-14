@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gra"
+    tools:context=".UserEnglishContentGrammarQuizTest"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/button_default"
+        android:onClick="back"
+        android:text="back"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEngGramTest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEngGrPre"
+        app:layout_constraintStart_toStartOf="@+id/textViewEngGramTest"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEngGramTest">
+
+        <RadioButton
+            android:id="@+id/radioQuizEnglishgrammarA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="?attr/colorBackgroundFloating"
+            android:text="RadioButton"
+            android:textColor="?attr/colorBackgroundFloating" />
+
+        <RadioButton
+            android:id="@+id/radioQuizEnglishgrammarB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="?attr/colorBackgroundFloating"
+            android:text="RadioButton"
+            android:textColor="?attr/colorBackgroundFloating" />
+
+        <RadioButton
+            android:id="@+id/radioQuizEnglishgrammarC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="?attr/colorBackgroundFloating"
+            android:text="RadioButton"
+            android:textColor="?attr/colorBackgroundFloating" />
+
+        <RadioButton
+            android:id="@+id/radioQuizEnglishgrammarD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="?attr/colorBackgroundFloating"
+            android:text="RadioButton"
+            android:textColor="?attr/colorBackgroundFloating" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnEngGrPre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="138dp"
+        android:background="@drawable/pre"
+        android:onClick="pre"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEngGramSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnEngGramSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_default"
+        android:onClick="submit"
+        android:text="@string/submit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEngGrPre"
+        app:layout_constraintEnd_toStartOf="@+id/BtnEngGramNext"
+        app:layout_constraintStart_toEndOf="@+id/btnEngGrPre" />
+
+    <Button
+        android:id="@+id/BtnEngGramNext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="138dp"
+        android:background="@drawable/next"
+        android:onClick="next"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEngGramSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEngGramTest" />
+
+    <TextView
+        android:id="@+id/textViewEngGramTest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="179dp"
+        android:text="TextView"
+        android:textColor="?attr/colorBackgroundFloating"
+        app:layout_constraintBottom_toTopOf="@+id/BtnEngGramNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

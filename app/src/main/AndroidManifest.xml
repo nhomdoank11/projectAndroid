@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jcj.learningskid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminHomeContent" />
+        <activity android:name=".UserEnglishContent" />
+        <activity android:name=".UserEnglishNewwordLesson" />
+        <activity android:name=".AdminEnglishNewwordAddLesson" />
+        <activity android:name=".UserEnglishContentGrammar" />
+        <activity android:name=".UserEnglishContentGrammarQuiz" />
+        <activity android:name=".UserEnglishContentGrammarQuizTest" />
+        <activity android:name=".UserEnglishContentGrammarQuizResult" />
+        <activity android:name=".AdminEnglishContentGrammarAdd" />
+        <activity android:name=".UserEnglishContentGrammarItemDescription" />
+        <activity android:name=".AdminEnglishContentGrammarList" />
+        <activity android:name=".AdminEnglishContentGrammarEdit" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".AdminSearchDictionary" />
+        <activity android:name=".UserDictionary" />
+        <activity android:name=".AdminEnglishContent" />
+        <activity android:name=".AdminEnglishContentGrammarQuizAdd" />
+        <activity android:name=".UserEnglishNewwordContent" />
+        <!-- <meta-data -->
+        <!-- android:name="preloaded_fonts" -->
+        <!-- android:resource="@array/preloaded_fonts" /> -->
+
+        <activity android:name=".AdminEnglishNewword" />
+        <activity android:name=".AdminEnglishNewwordAddWord" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".AdminAcceptDictionary" />
+        <activity android:name=".UserSearchDictionary" />
+        <activity android:name=".UserHomeContent" />
+        <activity android:name=".EnglishnewwordDetial"></activity>
+    </application>
+
+</manifest>

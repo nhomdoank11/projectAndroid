@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LearningsKid</string>
+    <string name="logout">Logout</string>
+    <string name="vietnam">Việt Nam:</string>
+    <string name="english">Tiếng anh:</string>
+    <string name="example">Ví dụ:</string>
+    <string name="hintInput">Nhập dữ liệu …</string>
+    <string name="btnAdd">Thêm</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="submit">submit</string>
+    <string name="Add">Add</string>
+    <string name="Back">Back</string>
+    <string name="Grammar">Grammar</string>
+    <string name="Dictionary">Dictionary</string>
+    <string name="NewWord">New Word</string>
+</resources>

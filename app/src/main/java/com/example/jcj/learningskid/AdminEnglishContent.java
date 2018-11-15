@@ -11,6 +11,7 @@ public class AdminEnglishContent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_english_content);
+        //test commit project moi
     }
     public void goEnglishGrammar(View v){
         Intent intent = new Intent(getApplicationContext(), AdminEnglishContentGrammarList.class);

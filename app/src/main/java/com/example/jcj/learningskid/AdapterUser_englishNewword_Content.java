@@ -44,6 +44,19 @@ public class AdapterUser_englishNewword_Content extends BaseAdapter {
         }
         myHolder.txtID.setText(lessonList.get(position).getId()+"");
         myHolder.txtWord.setText(lessonList.get(position).getWord());
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EnglishNewwordContent lesson = (EnglishNewwordContent) getItem(position);
+                Intent intent1 = new Intent(activity.getApplicationContext(), EnglishnewwordDetailcontent.class);
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable("exam", exam);
+                intent1.putExtra("lessonID", lesson.getLessnId());
+                intent1.putExtra("Detail", lesson.getDetailWord());
+                activity.startActivity(intent1);
+                activity.finish();
+            }
+        });
         return convertView;
     }
     class MyHolder {
